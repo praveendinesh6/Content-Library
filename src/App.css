@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.asset-tag {
+  background: #edeff2;
+  color: #383b44;
+  max-width: 80px;
+}
+.asset-container {
+  width: 250px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f3f3f6;
+  border-radius: 4px;
+}
+.asset-image {
+  width: 250px;
+  height: 250px;
+}
+.cl-left-nav {
+  width: 260px;
+  border-right: 1px solid #edeff2;
+}
+.cl-right-nav {
+  left: 260px;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-input-container {
+  border: 1px solid #edeff2;
+  border-radius: 4px;
+}
+.search-input-icon {
+  position: absolute;
+  top: 14px;
+  left: 5px;
+}
+.search-input {
+  font-size: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.radio-buttons-conainer input {
+  width: 16px;
+  height: 16px;
+}
+.menu-button:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.video-play-pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  display: flex;
+}
+.video-play-pause.video-playing {
+  display: none;
+}
+.player-container:hover .video-play-pause.video-playing {
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video-duration {
+  position: absolute;
+  width: 52px;
+  height: 20px;
+  top: 14px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 1px 8px;
+  color: #fff;
+  font-size: 12px;
 }
